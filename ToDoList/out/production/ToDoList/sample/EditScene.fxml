@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EditScene">
+   <children>
+      <DatePicker fx:id="datePickerEditTaskDate" layoutX="117.0" layoutY="161.0" prefHeight="25.0" prefWidth="479.0" />
+      <ComboBox fx:id="comboBoxEditTaskPriority" layoutX="117.0" layoutY="101.0" prefHeight="25.0" prefWidth="479.0" />
+      <TextArea fx:id="textFieldEditTaskDescription" layoutX="24.0" layoutY="200.0" prefHeight="160.0" prefWidth="570.0" />
+      <Button fx:id="EditButton" layoutX="78.0" layoutY="371.0" mnemonicParsing="false" onAction="#EditTaskClick" prefHeight="25.0" prefWidth="468.0" text="Edit" textFill="#870707">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="DateLabel" layoutX="24.0" layoutY="160.0" text="Exp date" textFill="#870707">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="PriorityLabel" layoutX="24.0" layoutY="100.0" text="Priority" textFill="#870707">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldEditTaskTitle" layoutX="117.0" layoutY="42.0" prefHeight="25.0" prefWidth="479.0" />
+      <Label fx:id="TitleLabel" layoutX="24.0" layoutY="41.0" text="Title" textFill="#870707">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="TitleLabel" layoutX="14.0" layoutY="31.0" text="Title" textFill="#870707">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textFieldEditTaskTitle" layoutX="107.0" layoutY="32.0" prefHeight="25.0" prefWidth="479.0" />
+            <Label fx:id="PriorityLabel" layoutX="14.0" layoutY="90.0" text="Priority" textFill="#870707">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="DateLabel" layoutX="14.0" layoutY="150.0" text="Exp date" textFill="#870707">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="EditButton" layoutX="68.0" layoutY="361.0" mnemonicParsing="false" onAction="#EditTaskClick" prefHeight="25.0" prefWidth="468.0" text="Edit" textFill="#870707">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="textFieldEditTaskDescription" layoutX="14.0" layoutY="190.0" prefHeight="160.0" prefWidth="570.0" />
+            <ComboBox fx:id="comboBoxEditTaskPriority" layoutX="107.0" layoutY="91.0" prefHeight="25.0" prefWidth="479.0" />
+            <DatePicker fx:id="datePickerEditTaskDate" layoutX="107.0" layoutY="151.0" prefHeight="25.0" prefWidth="479.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

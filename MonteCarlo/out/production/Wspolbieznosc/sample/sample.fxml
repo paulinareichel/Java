@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Canvas fx:id="Screen" height="318.0" width="295.0" />
+      <Label fx:id="Result" layoutX="326.0" layoutY="15.0" text="Result">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextFIeldResult" layoutX="388.0" layoutY="12.0" prefHeight="25.0" prefWidth="198.0" />
+      <TextField fx:id="TextFIeldPoints" layoutX="388.0" layoutY="67.0" prefHeight="25.0" prefWidth="198.0" />
+      <Label fx:id="Points" layoutX="325.0" layoutY="70.0" text="Points">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="Progress" layoutX="389.0" layoutY="123.0" prefHeight="25.0" prefWidth="198.0" progress="0.0" />
+      <Label layoutX="325.0" layoutY="126.0" text="Progress">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="StartButton" layoutX="315.0" layoutY="231.0" mnemonicParsing="false" onAction="#setStartButton" prefHeight="25.0" prefWidth="272.0" text="Start">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="StopButton" layoutX="315.0" layoutY="282.0" mnemonicParsing="false" onAction="#setStopButton" prefHeight="25.0" prefWidth="272.0" text="Stop">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

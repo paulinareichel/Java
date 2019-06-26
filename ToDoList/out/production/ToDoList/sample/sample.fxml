@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane fx:id="anchor" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="addButton" layoutX="15.0" layoutY="361.0" mnemonicParsing="false" onAction="#display" prefHeight="25.0" prefWidth="567.0" text="Add new task" textFill="#870707">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="toDoField" alignment="CENTER" editable="false" layoutX="14.0" layoutY="35.0" text="To Do">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="doneField" alignment="CENTER" editable="false" layoutX="411.0" layoutY="35.0" text="Done">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="progressField" alignment="CENTER" editable="false" layoutX="211.0" layoutY="35.0" text="In Progress">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ListView fx:id="toDoList" layoutX="14.0" layoutY="65.0" prefHeight="277.0" prefWidth="175.0">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem fx:id="contextMenuToDoEdit" mnemonicParsing="false" text="Edit" />
+                  <MenuItem fx:id="contextMenuToDoDelete" mnemonicParsing="false" text="Delete" />
+              </items>
+            </ContextMenu>
+         </contextMenu></ListView>
+      <ListView fx:id="progressArea" layoutX="211.0" layoutY="65.0" prefHeight="277.0" prefWidth="175.0">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem fx:id="contextMenuInProgressEdit" mnemonicParsing="false" text="Edit" />
+                  <MenuItem fx:id="contextMenuInProgressDelete" mnemonicParsing="false" text="Delete" />
+              </items>
+            </ContextMenu>
+         </contextMenu></ListView>
+      <ListView fx:id="doneArea" layoutX="411.0" layoutY="65.0" prefHeight="277.0" prefWidth="175.0">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem fx:id="contextMenuDoneEdit" mnemonicParsing="false" text="Edit" />
+                  <MenuItem fx:id="contextMenuDoneDelete" mnemonicParsing="false" text="Delete" />
+              </items>
+            </ContextMenu>
+         </contextMenu></ListView>
+      <MenuBar fx:id="MenuBar" layoutY="2.0" prefHeight="9.0" prefWidth="600.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Edit">
+              <items>
+                <MenuItem fx:id="saveTask" mnemonicParsing="false" onAction="#saveToFile" text="Save" />
+                  <MenuItem fx:id="openTask" mnemonicParsing="false" onAction="#openFromFile" text="Open" />
+                  <MenuItem fx:id="exportTask" mnemonicParsing="false" onAction="#exportToFile" text="Export" />
+                  <MenuItem fx:id="importTask" mnemonicParsing="false" onAction="#importFromFile" text="Import" />
+              </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

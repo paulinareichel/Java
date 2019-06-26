@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddNewTaskController">
+   <children>
+      <Label fx:id="TitleLabel"  layoutX="14.0" layoutY="31.0" text="Title" textFill="#870707">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TitleField" layoutX="107.0" layoutY="32.0" prefHeight="25.0" prefWidth="479.0" />
+      <Label fx:id="PriorityLabel" layoutX="14.0" layoutY="90.0" text="Priority" textFill="#870707">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="DateLabel" layoutX="14.0" layoutY="150.0" text="Exp date" textFill="#870707" >
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="AddNewButton" layoutX="68.0" layoutY="361.0" mnemonicParsing="false" onAction="#newTaskAdd" prefHeight="25.0" prefWidth="468.0" text="Add" textFill="#870707">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="DescriptionArea" layoutX="14.0" layoutY="190.0" prefHeight="160.0" prefWidth="570.0" />
+      <ComboBox fx:id="PriorityBox" layoutX="107.0" layoutY="91.0" prefHeight="25.0" prefWidth="479.0" />
+      <DatePicker fx:id="DatePicker" layoutX="107.0" layoutY="151.0" onAction="#initialize" prefHeight="25.0" prefWidth="479.0" />
+   </children>
+</AnchorPane>
